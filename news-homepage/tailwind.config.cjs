@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "header-text": "#c5c6ce",
+        "header-text": "#5d5f79",
+        btn: "hsl(5, 85%, 63%)",
+        btnText: "hsl(36, 100%, 99%)",
       },
     },
     fontFamily: {
-      inter: ["Inter"],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [],
