@@ -8,3 +8,5 @@ const HeroTexts = [
     buttonText: "read more",
   },
 ];
+
+export default HeroTexts;
