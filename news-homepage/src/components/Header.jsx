@@ -16,21 +16,25 @@ const Header = () => {
         <div className="menu-content hidden">
           <ul>
             {navs.map((item) => (
-              <li key={item}>{item}</li>
+              <li className="cursor-pointer" key={item}>
+                {item}
+              </li>
             ))}
           </ul>
         </div>
       </div>
 
       {/* desktop menu */}
-      <div className="desktop hidden md:flex">
+      <div className="desktop hidden md:flex p-10 justify-between">
         <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
         <div className="menu-lists">
-          <ul>
+          <ul className="flex  font-bold gap-4 text-header-text">
             {navs.map((item) => (
-              <li key={item}>{item}</li>
+              <li className="cursor-pointer" key={item}>
+                {item}
+              </li>
             ))}
           </ul>
           ;
