@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <div>
       {/* mobile menu */}
-      <div className="mobile  md:hidden">
+      <div className="mobile flex justify-between p-4 items-center   md:hidden">
         <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
         <div className="menu">
           <img src={Hamburger} alt="hamburger" />
         </div>
-        <div className="menu-content">
+        <div className="menu-content hidden">
           <ul>
             {navs.map((item) => (
               <li key={item}>{item}</li>
