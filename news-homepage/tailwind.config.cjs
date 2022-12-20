@@ -7,6 +7,8 @@ module.exports = {
         "header-text": "#5d5f79",
         btn: "hsl(5, 85%, 63%)",
         btnText: "hsl(36, 100%, 99%)",
+        title: "hsl(35, 77%, 62%)",
+        sideCard: "hsl(240, 100%, 5%)",
       },
     },
     fontFamily: {

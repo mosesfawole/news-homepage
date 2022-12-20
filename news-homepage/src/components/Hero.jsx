@@ -2,6 +2,7 @@ import React from "react";
 import HeroTexts from "../lib/hero";
 import DesktopBg from "../images/image-web-3-desktop.jpg";
 import MobileBg from "../images/image-web-3-mobile.jpg";
+import SideCard from "./SideCard";
 
 const Hero = () => {
   return (
@@ -32,6 +33,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
+        <SideCard />
       </div>
     </div>
   );
