@@ -22,3 +22,5 @@ const news = [
     text: "How the pandemic has sparked fresh opportunities.",
   },
 ];
+
+export default news;
