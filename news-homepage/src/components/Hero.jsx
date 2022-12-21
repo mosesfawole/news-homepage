@@ -6,23 +6,25 @@ import SideCard from "./SideCard";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="hero p-4">
+    <div className="md:flex p-10  gap-4">
+      <div className="hero">
         <div className="d-image hidden md:flex">
           <img src={DesktopBg} alt="desktop web3 image" />
         </div>
-        <div className="mobile-image flex md:hidden">
+        <div className="mobile-image flex justify-center items-center  md:hidden">
           <img src={MobileBg} alt="mobile web3 image" />
         </div>
-        <div className="contents   md:flex ">
-          <div className="bigTexts mt-8">
+        <div className="md:flex mt-4 items-center">
+          <div className="bigTexts">
             {HeroTexts.map((item, index) => (
-              <h1 className="text-5xl  font-extrabold" key={index}>
-                {item.largeText}
-              </h1>
+              <>
+                <h1 className="text-4xl  font-extrabold" key={index}>
+                  {item.largeText}
+                </h1>
+              </>
             ))}
           </div>
-          <div className="smallTexts flex flex-col gap-4    ">
+          <div className="smallTexts flex flex-col gap-4 justify-center    ">
             {HeroTexts.map((item, index) => (
               <>
                 <p className="text-header-text font-bold">{item.smallText}</p>
@@ -33,8 +35,8 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <SideCard />
       </div>
+      <SideCard />
     </div>
   );
 };
