@@ -32,15 +32,13 @@ const Header = () => {
               <img src={CloseIcon} alt="clos menu icon" />
             </span>
             <ul className="flex flex-col gap-4">
-              {navs.map((item) => (
-                <>
-                  <li
-                    className="cursor-pointer  hover:text-btn   text-2xl"
-                    key={item}
-                  >
-                    {item}
-                  </li>
-                </>
+              {navs.map((item, index) => (
+                <li
+                  className="cursor-pointer  hover:text-btn   text-2xl"
+                  key={index}
+                >
+                  {item}
+                </li>
               ))}
             </ul>
           </div>
@@ -54,10 +52,10 @@ const Header = () => {
         </div>
         <div className="menu-lists">
           <ul className="flex  font-bold gap-4 text-header-text">
-            {navs.map((item) => (
+            {navs.map((item, index) => (
               <li
                 className="cursor-pointer hover:opacity-50   hover:text-btn"
-                key={item}
+                key={index}
               >
                 {item}
               </li>
