@@ -30,11 +30,14 @@ const Hero = () => {
           <div className="smallTexts md:w-1/2 flex flex-col gap-4 justify-center    ">
             {HeroTexts.map((item, index) => (
               <>
-                <p className="text-header-text font-bold">{item.smallText}</p>
+                <p className="text-header-text  font-bold">{item.smallText}</p>
               </>
             ))}
-            <button className="px-6  p-3 text-btnText uppercase text-sm w-fit bg-btn">
-              read more
+            <button className="p-3  hover:bg-black hover:text-white text-btnText w-fit bg-btn">
+              <p className=" tracking-[2px] font-inter   uppercase text-xs">
+                {" "}
+                read more
+              </p>
             </button>
           </div>
         </div>
