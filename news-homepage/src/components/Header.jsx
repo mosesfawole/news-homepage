@@ -34,7 +34,10 @@ const Header = () => {
             <ul className="flex flex-col gap-4">
               {navs.map((item) => (
                 <>
-                  <li className="cursor-pointer   text-2xl" key={item}>
+                  <li
+                    className="cursor-pointer  hover:text-btn   text-2xl"
+                    key={item}
+                  >
                     {item}
                   </li>
                 </>
@@ -52,7 +55,10 @@ const Header = () => {
         <div className="menu-lists">
           <ul className="flex  font-bold gap-4 text-header-text">
             {navs.map((item) => (
-              <li className="cursor-pointer" key={item}>
+              <li
+                className="cursor-pointer hover:opacity-50   hover:text-btn"
+                key={item}
+              >
                 {item}
               </li>
             ))}
