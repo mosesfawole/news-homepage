@@ -48,6 +48,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.github.com/mosesfawole)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mosesfawole)
-- Twitter - [@yourusername](https://www.twitter.com/pharwoleh)
+- Website - [Moses Fawole](https://www.github.com/mosesfawole)
+- Frontend Mentor - [@mosesfawole](https://www.frontendmentor.io/profile/mosesfawole)
+- Twitter - [@pharwoleh](https://www.twitter.com/pharwoleh)
