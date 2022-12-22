@@ -9,10 +9,18 @@ const Hero = () => {
     <div className="md:flex p-4 md:p-10 gap-4">
       <div className="hero">
         <div className="d-image hidden md:flex">
-          <img src={DesktopBg} alt="desktop web3 image" />
+          <img
+            className="w-full h-full"
+            src={DesktopBg}
+            alt="desktop web3 image"
+          />
         </div>
         <div className="mobile-image flex justify-center items-center  md:hidden">
-          <img src={MobileBg} alt="mobile web3 image" />
+          <img
+            className="w-full h-full"
+            src={MobileBg}
+            alt="mobile web3 image"
+          />
         </div>
         <div className="md:flex gap-4 mt-4 justify-between ">
           <div className="bigTexts ">

@@ -20,16 +20,20 @@ const Header = () => {
       {/* mobile menu */}
       <div className="mobile flex justify-between p-4 items-center   md:hidden">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <img className="w-full h-full" src={Logo} alt="logo" />
         </div>
         <div className="menu-icon" onClick={openMenu}>
-          <img src={Hamburger} alt="hamburger" />
+          <img className="w-full h-full" src={Hamburger} alt="hamburger" />
         </div>
         <div className={isMenu ? "flex" : "hidden"}>
           <div className="overlay fixed right-0 top-0 w-full z-30 h-full bg-[#00000036]"></div>
           <div className="bg-white flex flex-col gap-20 fixed right-0 top-0 p-6 z-30 w-[70%] h-full">
             <span className="flex justify-end" onClick={closeMenu}>
-              <img src={CloseIcon} alt="clos menu icon" />
+              <img
+                className="w-full h-full"
+                src={CloseIcon}
+                alt="clos menu icon"
+              />
             </span>
             <ul className="flex flex-col gap-4">
               {navs.map((item, index) => (
@@ -48,7 +52,7 @@ const Header = () => {
       {/* desktop menu */}
       <div className="desktop hidden md:flex p-10 justify-between">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <img className="w-full h-full" src={Logo} alt="logo" />
         </div>
         <div className="menu-lists">
           <ul className="flex  font-bold gap-4 text-header-text">
