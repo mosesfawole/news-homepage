@@ -14,17 +14,20 @@ const Hero = () => {
         <div className="mobile-image flex justify-center items-center  md:hidden">
           <img src={MobileBg} alt="mobile web3 image" />
         </div>
-        <div className="md:flex mt-4 items-center">
-          <div className="bigTexts">
+        <div className="md:flex gap-4 mt-4 justify-between ">
+          <div className="bigTexts ">
             {HeroTexts.map((item, index) => (
               <>
-                <h1 className="text-4xl  font-extrabold" key={index}>
+                <h1
+                  className="text-5xl leading-[50px]  font-extrabold"
+                  key={index}
+                >
                   {item.largeText}
                 </h1>
               </>
             ))}
           </div>
-          <div className="smallTexts flex flex-col gap-4 justify-center    ">
+          <div className="smallTexts md:w-1/2 flex flex-col gap-4 justify-center    ">
             {HeroTexts.map((item, index) => (
               <>
                 <p className="text-header-text font-bold">{item.smallText}</p>

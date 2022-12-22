@@ -3,7 +3,7 @@ import news from "../lib/news";
 const NewsCard = () => {
   return (
     <div>
-      <div className="p-10">
+      <div className="md:p-10 p-4">
         <div className="grid gap-10 md:flex justify-center items-center">
           {news.map((item, index) => (
             <div className="flex  gap-10" key={index}>
