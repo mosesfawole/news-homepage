@@ -10,7 +10,10 @@ const SideCard = () => {
         <ul className="">
           {sideCardTexts.map((item, index) => (
             <div className="mt-4 flex flex-col gap-2  ">
-              <li key={index} className="text-btnText text-base font-bold">
+              <li
+                key={index}
+                className="hover:text-title cursor-pointer text-btnText text-base font-bold"
+              >
                 {item.title}
               </li>
               <p className="text-header-text text-sm mb-4">{item.text}</p>
