@@ -12,7 +12,9 @@ const NewsCard = () => {
               </span>
               <span className="flex sm:basis-60 flex-col gap-4 right">
                 <p className="text-header-text text-4xl font-bold">{item.id}</p>
-                <h1 className="font-extrabold text-lg">{item.title}</h1>
+                <h1 className="font-extrabold text-lg cursor-pointer hover:text-btn">
+                  {item.title}
+                </h1>
                 <p className="text-header-text ">{item.text}</p>
               </span>
             </div>
