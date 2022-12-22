@@ -6,7 +6,7 @@ import SideCard from "./SideCard";
 
 const Hero = () => {
   return (
-    <div className="md:flex p-10  gap-4">
+    <div className="md:flex p-4 md:p-10 gap-4">
       <div className="hero">
         <div className="d-image hidden md:flex">
           <img src={DesktopBg} alt="desktop web3 image" />

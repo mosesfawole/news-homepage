@@ -3,23 +3,21 @@ import news from "../lib/news";
 const NewsCard = () => {
   return (
     <div>
-      <div className="">
-        <ul>
+      <div className="p-10">
+        <div className="grid gap-10 md:flex justify-center items-center">
           {news.map((item, index) => (
-            <div key={index}>
-              <li>
-                <div className="left">
-                  <img src={item.image} alt={item.id} />
-                </div>
-                <div className="right">
-                  <p>{item.id}</p>
-                  <h1>{item.title}</h1>
-                  <p>{item.text}</p>
-                </div>
-              </li>
+            <div className="flex  gap-10" key={index}>
+              <span className="flex sm:basis-40  ">
+                <img src={item.image} alt={item.id} />
+              </span>
+              <span className="flex sm:basis-60 flex-col gap-4 right">
+                <p className="text-header-text text-4xl font-bold">{item.id}</p>
+                <h1 className="font-extrabold text-lg">{item.title}</h1>
+                <p className="text-header-text ">{item.text}</p>
+              </span>
             </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
