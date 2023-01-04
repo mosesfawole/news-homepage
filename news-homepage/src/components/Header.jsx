@@ -30,7 +30,7 @@ const Header = () => {
           <div className="bg-white flex flex-col gap-20 fixed right-0 top-0 p-6 z-30 w-[70%] h-full">
             <div className="flex justify-end" onClick={closeMenu}>
               <img
-                className="w-full h-full"
+                className=" h-full"
                 src={CloseIcon}
                 alt="clos menu icon"
               />
